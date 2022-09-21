@@ -470,4 +470,3 @@ Time complexity: O(1)
 Removing elements
 This operation is always a constant time operation if we have a pointer to the previous element. But if we have to search for the element this would be O(n).
 
-Markdown 1628 bytes 269 words 65 lines Ln 60, Col 158HTML 1158 characters 257 words 34 paragraphs
