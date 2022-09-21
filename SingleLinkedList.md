@@ -421,11 +421,12 @@ A key feature of the linked lists is a list node
 List node
 Have two pointers: value and the next
 
+```python
 class Node():
 	def __init__(self, value):
 		self.value = value
 		self.next = None
-	
+```
 The next pointer is linked to the address of the another node.
 
 ListNode1: ListNode1.next -> points to ListNode2
@@ -439,12 +440,14 @@ It’s also important to have two pointer of our linked list, one that points to
 Search
 To search in a linked list, we can iterate over every element using a while loop, this property is because the last element is pointing to null.
 
+```python
 # we initialize to node 1
 cur = ListNode1
 # iterate over every element until cur becomes null
 while cur != None:
 	# update cur to the next node
 	cur = cur.next
+```
 Time complexity: O(n)
 
 Adding elements
@@ -456,10 +459,12 @@ What we should do to add a new element is to change the pointer to null to the n
 
 Since we have a pointer to the tail of the list we can use it
 
+```python
 # None now becomes ListNode4
 tail.next = ListNode4
 # ListNode3 now becomes ListNode4
 tail = ListNode4
+```
 Time complexity: O(1)
 
 Removing elements
